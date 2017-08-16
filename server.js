@@ -23,7 +23,9 @@ var articles= {
     </p>`
 
 },
-    'Article-Two':{title:'Article Two |Kartik Gupta',
+    'Article-Two':{
+        
+    title:'Article Two |Kartik Gupta',
     heading:'Article Two',
     date:'Aug 17,2017',
     content: ` <p>
@@ -38,7 +40,9 @@ var articles= {
 
         
     },
-    'Article-Three':{title:'Article Three |Kartik Gupta',
+    'Article-Three':{
+        
+    title:'Article Three |Kartik Gupta',
     heading:'Article Three',
     date:'Aug 18 ,2017',
     content: ` <p>
@@ -98,7 +102,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/Article-one',function(req,res){
+app.get('/:articleName',function(req,res){
     //articleName == article-one
     //articles[articleName] == {} content object for article one
     var articleName=req.params.articleName;
