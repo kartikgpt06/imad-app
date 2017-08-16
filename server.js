@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 
 var articles= {
-   'Article-One':{
+   'Article-one':{
     
     title:'Article One |Kartik Gupta',
     heading:'Article One',
@@ -98,7 +98,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one',function(req,res){
+app.get('/Article-one',function(req,res){
     //articleName == article-one
     //articles[articleName] == {} content object for article one
     
