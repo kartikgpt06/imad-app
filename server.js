@@ -14,52 +14,6 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var articles= {
-   'Article-one':{
-    
-    title:'Article One |Kartik Gupta',
-    heading:'Article One',
-    date:'Aug 16,2017',
-    content: ` <p>
-        This is the content for my first article.This is the content for my first article.
-    </p>
-    <p>
-        This is the content for my first article.This is the content for my first article.
-    </p>
-    <p>
-        This is the content for my first article.This is the content for my first article.
-    </p>`
-
-},
-    'Article-Two':{
-        
-    title:'Article Two |Kartik Gupta',
-    heading:'Article Two',
-    date:'Aug 17,2017',
-    content: ` <p>
-        This is the content for my second article.This is the content for my second article.
-    </p>
-    
-    <p>
-        This is the content for my second article.This is the content for my second article.
-    </p>`
-
-        
-    },
-    'Article-Three':{
-        
-    title:'Article Three |Kartik Gupta',
-    heading:'Article Three',
-    date:'Aug 18 ,2017',
-    content: ` <p>
-        This is the content for my third article.This is the content for my third   article.
-    </p>
-    
-    <p>
-        This is the content for my third article.This is the content for my third article.
-    </p>`
-}
-};
 function createTemplate (data) {
     var title=data.title;
     var date=data.date;
